@@ -1,3 +1,46 @@
 .title-section strong {
     border-bottom: 1px solid #ff214f;
 }
+
+//section portofolio
+
+.grid-row {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    padding: 0 4px !important;
+}
+
+.column {
+    flex: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+// Section about me
+.about-me strong {
+    border-bottom: 1px solid #ff214f;
+}
+
+h6 {
+    font-size: 20px !important;
+    line-height: 25px !important;
+}
+
+.btn-myresume {
+    border-radius: 40px !important;
+}
+
+.btn-myresume:hover {
+    background-color: purple !important;
+}
+
+// section contact
+
+.fa-contact-custom {
+    color: #ff214f;
+}
