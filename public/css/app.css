@@ -4678,6 +4678,44 @@ readers do not read off random characters that represent icons */
   border-bottom: 1px solid #ff214f;
 }
 
+.grid-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  padding: 0 4px !important;
+}
+
+.column {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.about-me strong {
+  border-bottom: 1px solid #ff214f;
+}
+
+h6 {
+  font-size: 20px !important;
+  line-height: 25px !important;
+}
+
+.btn-myresume {
+  border-radius: 40px !important;
+}
+
+.btn-myresume:hover {
+  background-color: purple !important;
+}
+
+.fa-contact-custom {
+  color: #ff214f;
+}
+
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

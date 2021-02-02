@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="/img/mr panjul youtube.jpg" type="image/jpg">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navigation -->
@@ -51,10 +52,10 @@
   <header class="masthead">
     <div class="container">
       <div class="row align-items-center row-title">
-       <div class="col-sm-3 text-center">
+       <div class="col-sm-3 text-center" data-aos="fade-right" data-aos-duration="1500">
            <img src="/img/mr panjul 1.jpg" class="img-fluid my-photo" alt="My-Photo">
         </div> 
-        <div class="col-sm-9 text-center">
+        <div class="col-sm-9 text-center" data-aos="fade-up" data-aos-duration="1500">
         <div class="my-name"> Hi, I'm <strong>Novrian</strong></div> 
         <div class="caption"> 1% Human 99% Dreamer</div>
       </div>
@@ -68,10 +69,143 @@
     <h3 class="text-center title-section"><strong>PORTOFOLIO</strong>
     </h3>
     <p class="text-center font-weight-light mb-5"><small>SELECTED LATEST WORKS</small></p>
+  <div class="container">
+    <div class="row grid-row">
+      <div class="column">
+        <img src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=300&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
+      </div>
+      <div class="column">
+        <img src="https://images.unsplash.com/photo-1585844621420-c0c2f393ab71?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
+        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+
+  <section id="experience" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="font-weight-light">
+        EXPERIENCE
+      </h2>
+      <hr class="mb-5" style="border-top: 1px solid #FFFFFF">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <h4 class="mb-0">College Student</h4>
+        <p class="lead">Universitas Gunadarma</p>
+        <p>Make Gunadarma Greaat Again</p>
+      </div>
+      <div class="col-lg-4 text-lg-right">
+      Agustus 2017-Present
+      </div>
+    </div>
     </div>
   </section>
 
+<section id="education" class="py-5">
+  <div class="container">
+    <h2 class="font-weight-light">
+      EDUCATION
+    </h2>
+    <hr class="mb-4">
+    <div class="row mb-5">
+      <div class="col-lg-8">
+<h4 class="mb-0">Universitas Gunadarma</h4>
+<p class="lead">Bachelor Degree of Informatic Engineering</p>
+      </div>
+<div class="col-lg-4 text-lg-right">2017 - 2021</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-5">
+<div class="container">
+  <h3 class="text-center about-me mb-5"><strong>ABOUT ME</strong></h3>
+
+  <div class="row">
+    <div class="col-lg-6 px-5">
+      <blockquote class="blockquote">
+        <p>
+          <i class="fa fa-quote-left fa-2x">
+            
+          </i>
+        </p>
+        <p class="mb-0">
+          <i>
+            i want to change the world,  before that, i need to change my self
+          </i>
+        </p>
+        <footer class="blockquote-footer">Unknown in
+           <cite title="Source Title">Momentum Chrome</cite>
+
+        </footer>
+      </blockquote>
+    </div>
+    <div class="col-lg-6 px-5">
+      <h6>
+        Im so addicted in programming, and i love to develop some apps or website, and im happy to be full-stack developer
+      </h6>
+      <p>
+        I am looking for position in apps or web developer & UI/UX.
+      </p>
+      <p>
+        i have skills on Flutter developer, Laravel-Web Developer, Figma, Adobe XD, Photoshop, & Premiere Pro
+      </p>
+      <br><a class="btn btn-outline-dark btn-myresume" href="/img/CV.pdf" 
+      target="_blank" role="button">
+    <i class="fas fa-arrow-alt-circle-down" aria-hidden="true"></i>
+    MY RESUME
+    </a>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<section id="contact" class="py-5">
+  <div class="container">
+    <h3 class="text-center about-me mb-5"> <strong>GET IN TOUCH</strong></h3>
+    <div class="row">
+      <div class="col-lg-3 text-center">
+        <a href="https://www.google.com/maps/place/6%C2%B021'57.6%22S+106%C2%B050'14.8%22E/@-6.365989,106.8352473,17z/data=!3m1!4b1!4m9!1m2!10m1!1e2!3m5!1s0x2e69ec139177af6f:0x0!7e2!8m2!3d-6.365989!4d106.837436?authuser=1&hl=id" 
+        target="_blank"> <i class="far fa-map fa-contact-custom fa-4x mb-2"></i></a>
+          <p><strong>Go to my Address? Click the icon.</strong></p>
+          <p>Jl. Kedoya Raya No.53 Rt 04/ Rw 02, Pondok Cina, Beji, Depok</p>
+      </div>
+
+      <div class="col-lg-3 text-center">
+        <a href="antoniusanggakurniawan@gmail.com" target="_blank"> <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
+        <p><strong>Email Me</strong></p>
+        <p>Just click the icon or send your message to antoniusanggakurniawan@gmail.com</p>
+      </div>
+
+      <div class="col-lg-3 text-center">
+        <a href="https://api.whatsapp.com/send?phone=6281212941016&text=Hi, Angga" target="_blank"><i class="far fa-comments fa-contact-custom fa-4x mb-2"></i></a>
+        <p><strong>Let's Talk</strong></p>
+        <p>Just click the icon or Call my phone number 0812 1294 1016</p>
+      </div>
+
+      <div class="col-lg-3 text-center">
+        <i class="far fa-clock fa-contact-custom fa-4x mb-2"></i>
+        <p><strong>Working Hours</strong></p>
+        <p>Mon to Sat – 9.00 to 18.00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+<small>Copyright &copy; Novrian H</small>
+  </div>
+</footer>
+
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
