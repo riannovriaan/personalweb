@@ -90,6 +90,7 @@
         EXPERIENCE
       </h2>
       <hr class="mb-5" style="border-top: 1px solid #FFFFFF">
+<<<<<<< HEAD
       @foreach ($experiences as $experience)
     <div class="row mb-5">
       <div class="col-lg-8">
@@ -102,6 +103,18 @@
       </div>
     </div>
     @endforeach
+=======
+    <div class="row mb-5">
+      <div class="col-lg-8">
+        <h4 class="mb-0">College Student</h4>
+        <p class="lead">Universitas Gunadarma</p>
+        <p>Make Gunadarma Greaat Again</p>
+      </div>
+      <div class="col-lg-4 text-lg-right">
+      Agustus 2017-Present
+      </div>
+    </div>
+>>>>>>> 33f3e47fab93b0b1b6c1a92fbb9833d54b91a3dc
     </div>
   </section>
 
