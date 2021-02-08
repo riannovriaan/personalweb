@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +7,40 @@
     <title>Hi, I'm Novrian</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="/img/mr panjul youtube.jpg" type="image/jpg">
-
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top navbar-edit rounded-bottom">
     <div class="container">
-      <a class="navbar-brand" href="#">
-          <img src="/img/mr panjul youtube.jpg" width="50" height="50" alt="My-Logo" loading="lazy">
+      <a class="navbar-brand" href="/">
+          <img class="rounded-circle" src="/img/mr panjul youtube.jpg" width="50" height="50" alt="My-Logo" loading="lazy">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link page-scroll text-white" href="#home">Home
                   <span class="sr-only">(current)</span>
                 </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portofolio</a>
+            <a class="nav-link page-scroll text-white" href="#portofolio">Portofolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
+            <a class="nav-link page-scroll text-white" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link page-scroll text-white" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link page-scroll text-white" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Get In Touch</a>
+            <a class="nav-link page-scroll text-white" href="#contact">Get In Touch</a>
           </li>
         </ul>
       </div>
@@ -52,32 +51,32 @@
   <header class="masthead">
     <div class="container">
       <div class="row align-items-center row-title">
-       <div class="col-sm-3 text-center" data-aos="fade-right" data-aos-duration="1500">
-           <img src="/img/mr panjul 1.jpg" class="img-fluid my-photo" alt="My-Photo">
+        <div class="col-sm-3 text-center" data-aos="fade-right" data-aos-duration="1500">
+          <img src="/img/mr panjul 1.jpg" class="img-fluid my-photo rounded-circle" alt="My-Photo">
         </div> 
         <div class="col-sm-9 text-center" data-aos="fade-up" data-aos-duration="1500">
-        <div class="my-name"> Hi, I'm <strong>Novrian</strong></div> 
-        <div class="caption"> 1% Human 99% Dreamer</div>
+          <div class="my-name"> Hi, I'm <strong>Novrian</strong></div> 
+          <div class="caption"> 1% Human 99% Dreamer</div>
+        </div>
       </div>
     </div>
-</div>
   </header>
   
   <!-- Page Content -->
   <section id="portofolio" class="py-5">
     <div class="container">
-    <h3 class="text-center title-section"><strong>PORTOFOLIO</strong>
+    <h3 class="text-center title-section" data-aos="fade-up" data-aos-duration="1000"><strong>PORTOFOLIO</strong>
     </h3>
-    <p class="text-center font-weight-light mb-5"><small>SELECTED LATEST WORKS</small></p>
+    <p class="text-center font-weight-light mb-5" data-aos="fade-up" data-aos-duration="1500"><small>SELECTED LATEST WORKS</small></p>
   <div class="container">
     <div class="row grid-row">
       <div class="column">
-        <img src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=300&fit=crop" alt="">
-        <img src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
+        <img data-aos="fade-right" data-aos-duration="1500" src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=300&fit=crop" alt="">
+        <img data-aos="fade-right" data-aos-duration="1500" src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
       </div>
       <div class="column">
-        <img src="https://images.unsplash.com/photo-1585844621420-c0c2f393ab71?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
-        <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop" alt="">
+        <img data-aos="fade-left" data-aos-duration="1500" src="https://images.unsplash.com/photo-1585844621420-c0c2f393ab71?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
+        <img data-aos="fade-left" data-aos-duration="1500" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop" alt="">
       </div>
     </div>
   </div>
@@ -86,12 +85,12 @@
 
   <section id="experience" class="py-5 bg-dark text-white">
     <div class="container">
-      <h2 class="font-weight-light">
+      <h2 class="font-weight-light" data-aos="fade-right" data-aos-duration="1500">
         EXPERIENCE
       </h2>
-      <hr class="mb-5" style="border-top: 1px solid #FFFFFF">
+      <hr class="mb-5" data-aos="fade-left" data-aos-duration="1500" style="border-top: 1px solid #FFFFFF">
       @foreach ($experiences as $experience)
-    <div class="row mb-5">
+    <div class="row mb-5" data-aos="fade-up" data-aos-duration="1500">
       <div class="col-lg-8">
         <h4 class="mb-0">{{ $experience->title}}</h4>
         <p class="lead">{{ $experience->loc}}</p>

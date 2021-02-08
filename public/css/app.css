@@ -4621,18 +4621,18 @@ readers do not read off random characters that represent icons */
   font-family: "Montserrat", sans-serif;
   font-size: 100px;
   line-height: 95px;
-  color: #232323;
+  color: white;
 }
 
 .my-name strong {
-  border-bottom: 3px solid #ff214f;
+  border-bottom: 3px solid #000000;
 }
 
 .caption {
   font-family: "Montserrat", sans-serif;
   margin-top: 40px;
   letter-spacing: 2px;
-  color: #939393;
+  color: #ffffff;
   font-size: 30px;
   line-height: 20px;
   font-weight: bold;
@@ -4675,7 +4675,7 @@ readers do not read off random characters that represent icons */
 }
 
 .title-section strong {
-  border-bottom: 1px solid #ff214f;
+  border-bottom: 1px solid #000000;
 }
 
 .grid-row {
@@ -4696,7 +4696,7 @@ readers do not read off random characters that represent icons */
 }
 
 .about-me strong {
-  border-bottom: 1px solid #ff214f;
+  border-bottom: 1px solid #000000;
 }
 
 h6 {
@@ -4763,6 +4763,17 @@ h6 {
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
+}
+
+.navbar-edit {
+  background-color: #404040;
+}
+
+header {
+  padding: 140px 0 109px;
+  margin-top: -70px;
+  background: linear-gradient(to top, #ffffff -5%, #404040 89%);
+  background-size: cover;
 }
 
 /*!

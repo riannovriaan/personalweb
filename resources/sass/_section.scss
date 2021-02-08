@@ -1,5 +1,5 @@
 .title-section strong {
-    border-bottom: 1px solid #ff214f;
+    border-bottom: 1px solid #000000;
 }
 
 //section portofolio
@@ -23,7 +23,7 @@
 
 // Section about me
 .about-me strong {
-    border-bottom: 1px solid #ff214f;
+    border-bottom: 1px solid #000000;
 }
 
 h6 {
@@ -96,3 +96,18 @@ h6 {
     margin-left: -15rem;
   }
 }
+
+.navbar-edit{
+  background-color: #404040;
+  
+}
+
+header {
+  padding: 140px 0 109px;
+  margin-top: -70px;
+  background: linear-gradient(to top, #ffffff -5%, #404040 89%);
+  background-size: cover;
+  
+  
+}
+
