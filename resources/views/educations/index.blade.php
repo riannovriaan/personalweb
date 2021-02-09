@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="d-flex" id="wrapper">
+  <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
@@ -50,60 +50,50 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2>Edit experience</h2>
+                    <h2>Educatoins Table</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('experiences.index') }}"> Back</a>
+                    <a class="btn btn-success" href="{{ route('educations.create') }}"> Create Education</a>
                 </div>
             </div>
         </div>
-     
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
+        
+        @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p>{{ $message }}</p>
+        </div>
         @endif
-     
-        <form action="{{ route('experiences.update',$experience->id) }}" method="POST">
-            @csrf
-            @method('PUT')
-     
-             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Title:</strong>
-                        <input type="text" name="title" value="{{ $experience->title }}" class="form-control" placeholder="Title">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Location:</strong>
-                        <input type="text" name="loc" value="{{ $experience->loc }}" class="form-control" placeholder="Location">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Description:</strong>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $experience->description }}</textarea>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Since:</strong>
-                        <input type="text" name="since" value="{{ $experience->since }}" class="form-control" placeholder="Since">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                  <button type="submit" class="btn btn-primary">Update</button>
-                </div>
-            </div>
-     
-        </form>
+        
+        <table class="table table-bordered">
+            <tr>
+                <th width="20px" class="text-center">No</th>
+                <th>Location</th>
+                <th>Description</th>
+                <th>Since</th>
+                <th width="280px"class="text-center">Action</th>
+            </tr>
+            @foreach ($educations as $education)
+            <tr>
+                <td class="text-center">{{ $education->id }}</td>
+                <td>{{ $education->loc }}</td>
+                <td>{{ $education->description }}</td>
+                <td>{{ $education->since }}</td>
+                <td class="text-center">
+                    <form action="{{ route('educations.destroy',$education->id) }}" method="POST">
+        
+                        <a class="btn btn-info btn-sm" href="{{ route('educations.show',$education->id) }}">Show</a>
+        
+                        <a class="btn btn-primary btn-sm" href="{{ route('educations.edit',$education->id) }}">Edit</a>
+        
+                        @csrf
+                        @method('DELETE')
+        
+                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
+        </table>
       </div>
     </div>
     <!-- /#page-content-wrapper -->

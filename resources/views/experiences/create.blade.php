@@ -7,8 +7,8 @@
     <div class="bg-light border-right" id="sidebar-wrapper">
       <div class="sidebar-heading">Dashboard Admin </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light active">Experiences</a>
-        {{-- <a href="#" class="list-group-item list-group-item-action bg-light">Educations</a> --}}
+        <a href="{{ url('/experiences') }}" class="list-group-item list-group-item-action bg-light active">Experiences</a>
+        <a href="{{ url('/educations') }}" class="list-group-item list-group-item-action bg-light">Educations</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -17,7 +17,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="tombol-toggle">Hide Menu</button>
+        <button class="btn btn-primary" id="tombol-toggle">Menu</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

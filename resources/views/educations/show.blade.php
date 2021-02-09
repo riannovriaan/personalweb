@@ -50,60 +50,34 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2>Edit experience</h2>
+                    <h2> Show Education</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('experiences.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('educations.index') }}"> Back</a>
                 </div>
             </div>
         </div>
      
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-     
-        <form action="{{ route('experiences.update',$experience->id) }}" method="POST">
-            @csrf
-            @method('PUT')
-     
-             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Title:</strong>
-                        <input type="text" name="title" value="{{ $experience->title }}" class="form-control" placeholder="Title">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Location:</strong>
-                        <input type="text" name="loc" value="{{ $experience->loc }}" class="form-control" placeholder="Location">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Description:</strong>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $experience->description }}</textarea>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Since:</strong>
-                        <input type="text" name="since" value="{{ $experience->since }}" class="form-control" placeholder="Since">
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                  <button type="submit" class="btn btn-primary">Update</button>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Location:</strong>
+                    {{ $education->loc }}
                 </div>
             </div>
-     
-        </form>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Description:</strong>
+                    {{ $education->description }}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Since:</strong>
+                    {{ $education->since }}
+                </div>
+            </div>
+        </div>
       </div>
     </div>
     <!-- /#page-content-wrapper -->

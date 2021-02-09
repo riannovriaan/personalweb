@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 
 Route::resource('experiences', App\Http\Controllers\ExperienceController::class)->middleware('auth');
+Route::resource('educations', App\Http\Controllers\EducationController::class)->middleware('auth');

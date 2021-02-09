@@ -8,7 +8,7 @@
       <div class="sidebar-heading">Dashboard Admin </div>
       <div class="list-group list-group-flush">
         <a href="{{ url('/experiences') }}" class="list-group-item list-group-item-action bg-light">Experiences</a>
-        {{-- <a href="#" class="list-group-item list-group-item-action bg-light">Educations</a> --}}
+        <a href="{{ url('/educations') }}" class="list-group-item list-group-item-action bg-light">Educations</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
