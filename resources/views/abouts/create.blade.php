@@ -51,14 +51,14 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2>Edit Education</h2>
+                    <h2>Create New About</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('educations.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('abouts.index') }}"> Back</a>
                 </div>
             </div>
         </div>
-    
+        
         @if ($errors->any())
             <div class="alert alert-danger">
                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -69,35 +69,45 @@
                 </ul>
             </div>
         @endif
-    
-        <form action="{{ route('educations.update',$education->id) }}" method="POST">
+        
+        <form action="{{ route('abouts.store') }}" method="POST">
             @csrf
-            @method('PUT')
-    
+        
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Location:</strong>
-                        <input type="text" name="loc" value="{{ $education->loc }}" class="form-control" placeholder="Location">
+                        <strong>Quote 1:</strong>
+                        <textarea class="form-control" style="height:150px" name="quote1" placeholder="Quote 1"></textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Description:</strong>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $education->description }}</textarea>
+                        <strong>Quote 1a:</strong>
+                        <textarea class="form-control" style="height:150px" name="quote1a" placeholder="Quote 1a"></textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Since:</strong>
-                        <input type="text" name="since" value="{{ $education->since }}" class="form-control" placeholder="Since">
+                        <strong>Quote 2:</strong>
+                        <textarea class="form-control" style="height:150px" name="quote2" placeholder="Quote 2"></textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Quote 2a:</strong>
+                        <textarea class="form-control" style="height:150px" name="quote2a" placeholder="Quote 2a"></textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Quote 2b:</strong>
+                        <textarea class="form-control" style="height:150px" name="quote2b" placeholder="Quote 2b"></textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
-    
         </form>
     </div>
     </div>

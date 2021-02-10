@@ -124,74 +124,79 @@
   
     <section id="about" class="py-5">
     <div class="container">
-      <h3 class="text-center about-me mb-5"><strong>ABOUT ME</strong></h3>
+      <h3 class="text-center about-me mb-5" data-aos="fade-up" data-aos-duration="1500"><strong>ABOUT ME</strong></h3>
   
-      <div class="row">
-        <div class="col-lg-6 px-5">
-          <blockquote class="blockquote">
-            <p>
-              <i class="fa fa-quote-left fa-2x">
-                
-              </i>
+      @foreach ($abouts as $about)
+            <div class="row">
+          <div class="col-lg-6 px-5">
+            <blockquote class="blockquote">
+              <p>
+                <i class="fa fa-quote-left fa-2x" data-aos="fade-left" data-aos-duration="1500">
+                  
+                </i>
+              </p>
+              <p class="mb-0" data-aos="fade-up" data-aos-duration="1500">
+                <i>
+                  {{ $about->quote1 }}
+                </i>
+              </p>
+              <footer class="blockquote-footer" data-aos="fade-left" data-aos-duration="1500">{{ $about->quote1a }}</footer>
+            </blockquote>
+          </div>
+          <div class="col-lg-6 px-5">
+            <h6 data-aos="fade-up" data-aos-duration="1500">
+              {{ $about->quote2 }}
+            </h6> 
+            <p data-aos="fade-up" data-aos-duration="1500">
+             {{ $about->quote2a }}
             </p>
-            <p class="mb-0">
-              <i>
-                i want to change the world,  before that, i need to change my self
-              </i>
+            <p data-aos="fade-up" data-aos-duration="1500">
+              {{ $about->quote2b }}
             </p>
-            <footer class="blockquote-footer">Unknown in
-              <cite title="Source Title">Momentum Chrome</cite>
-
-            </footer>
-          </blockquote>
+            <br><a class="btn btn-outline-dark btn-myresume" data-aos="fade-up" data-aos-duration="1500" href="/img/CV.pdf" 
+            target="_blank" role="button">
+          <i class="fas fa-arrow-alt-circle-down" aria-hidden="true"></i>
+          MY RESUME
+          </a>
+          </div>
         </div>
-        <div class="col-lg-6 px-5">
-          <h6>
-            Im so addicted in programming, and i love to develop some apps or website, and im happy to be full-stack developer
-          </h6>
-          <p>
-            I am looking for position in apps or web developer & UI/UX.
-          </p>
-          <p>
-            i have skills on Flutter developer, Laravel-Web Developer, Figma, Adobe XD, Photoshop, & Premiere Pro
-          </p>
-          <br><a class="btn btn-outline-dark btn-myresume" href="/img/CV.pdf" 
-          target="_blank" role="button">
-        <i class="fas fa-arrow-alt-circle-down" aria-hidden="true"></i>
-        MY RESUME
-        </a>
-        </div>
-      </div>
+      @endforeach
     </div>
   
     </section>
     
     <section id="contact" class="py-5">
       <div class="container">
-        <h3 class="text-center about-me mb-5"> <strong>GET IN TOUCH</strong></h3>
+        <h3 class="text-center about-me mb-5" data-aos="fade-up" data-aos-duration="1500"> <strong>GET IN TOUCH</strong></h3>
         <div class="row">
-          <div class="col-lg-3 text-center">
+          {{-- <div class="col-lg-3 text-center">
             <a href="https://www.google.com/maps/place/6%C2%B021'57.6%22S+106%C2%B050'14.8%22E/@-6.365989,106.8352473,17z/data=!3m1!4b1!4m9!1m2!10m1!1e2!3m5!1s0x2e69ec139177af6f:0x0!7e2!8m2!3d-6.365989!4d106.837436?authuser=1&hl=id" 
             target="_blank"> <i class="far fa-map fa-contact-custom fa-4x mb-2"></i></a>
               <p><strong>Go to my Address? Click the icon.</strong></p>
               <p>Jl. Kedoya Raya No.53 Rt 04/ Rw 02, Pondok Cina, Beji, Depok</p>
+          </div> --}}
+
+          <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=novrianrian19@gmail.com" target="_blank"> <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
+            <p><strong>Email Me!</strong></p>
+            <p>Just click the icon or send your message to novrianrian19@gmail.com</p>
           </div>
 
-          <div class="col-lg-3 text-center">
-            <a href="antoniusanggakurniawan@gmail.com" target="_blank"> <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
-            <p><strong>Email Me</strong></p>
-            <p>Just click the icon or send your message to antoniusanggakurniawan@gmail.com</p>
-          </div>
-
-          <div class="col-lg-3 text-center">
+          {{-- <div class="col-lg-3 text-center">
             <a href="https://api.whatsapp.com/send?phone=6281212941016&text=Hi, Angga" target="_blank"><i class="far fa-comments fa-contact-custom fa-4x mb-2"></i></a>
             <p><strong>Let's Talk</strong></p>
             <p>Just click the icon or Call my phone number 0812 1294 1016</p>
+          </div> --}}
+
+          <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
+            <a href="https://www.instagram.com/riannovriaan/" target="_blank"><i class="fab fa-instagram fa-contact-custom fa-4x mb-2"></i></a>
+            <p><strong>Followe Me!</strong></p>
+            <p>Just click the icon or Find @riannovriaan</p>
           </div>
 
-          <div class="col-lg-3 text-center">
+          <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
             <i class="far fa-clock fa-contact-custom fa-4x mb-2"></i>
-            <p><strong>Working Hours</strong></p>
+            <p><strong>Working Hours!</strong></p>
             <p>Mon to Sat – 9.00 to 18.00</p>
           </div>
         </div>

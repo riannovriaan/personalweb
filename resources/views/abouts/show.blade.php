@@ -51,10 +51,10 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2> Show Education</h2>
+                    <h2> Show About</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('educations.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('abouts.index') }}"> Back</a>
                 </div>
             </div>
         </div>
@@ -62,20 +62,32 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    {{ $education->loc }}
+                    <strong>Quote1 :</strong>
+                    {{ $about->quote1 }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Description:</strong>
-                    {{ $education->description }}
+                    <strong>Quote1a :</strong>
+                    {{ $about->quote1a }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Since:</strong>
-                    {{ $education->since }}
+                    <strong>Quote2 :</strong>
+                    {{ $about->quote2 }}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Quote2a :</strong>
+                    {{ $about->quote2a }}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Quote2b :</strong>
+                    {{ $about->quote2b }}
                 </div>
             </div>
         </div>

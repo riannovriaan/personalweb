@@ -9,6 +9,7 @@
       <div class="list-group list-group-flush">
         <a href="{{ url('/experiences') }}" class="list-group-item list-group-item-action bg-light active">Experiences</a>
         <a href="{{ url('/educations') }}" class="list-group-item list-group-item-action bg-light">Educations</a>
+        <a href="{{ url('/abouts') }}" class="list-group-item list-group-item-action bg-light">About Me</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
