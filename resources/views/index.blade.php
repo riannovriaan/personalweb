@@ -23,24 +23,24 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link page-scroll text-white" href="#home">Home
+              <a class="nav-link page-scroll text-black text-bold" href="#home">Home
                     <span class="sr-only">(current)</span>
                   </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll text-white" href="#portofolio">Portofolio</a>
+              <a class="nav-link page-scroll text-dark text-bold" href="#portofolio">Portofolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll text-white" href="#experience">Experience</a>
+              <a class="nav-link page-scroll text-dark text-bold" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll text-white" href="#education">Education</a>
+              <a class="nav-link page-scroll text-dark text-bold" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll text-white" href="#about">About</a>
+              <a class="nav-link page-scroll text-dark text-bold" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll text-white" href="#contact">Get In Touch</a>
+              <a class="nav-link page-scroll text-dark text-bold" href="#contact">Get In Touch</a>
             </li>
           </ul>
         </div>

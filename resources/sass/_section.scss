@@ -33,16 +33,30 @@ h6 {
 
 .btn-myresume {
     border-radius: 40px !important;
+    transition: transform .2s !important;
 }
 
 .btn-myresume:hover {
-    background-color: purple !important;
+    background-color: rgb(1, 118, 214) !important;
+      -ms-transform: scale(1.5) !important;
+      /* IE 9 */
+      -webkit-transform: scale(1.5) !important;
+      /* Safari 3-8 */
+      transform: scale(1.5) !important;
 }
 
 // section contact
 
 .fa-contact-custom {
     color: #ff214f;
+    transition: transform .2s;
+}
+.fa-contact-custom:hover{
+  -ms-transform: scale(1.5);
+  /* IE 9 */
+  -webkit-transform: scale(1.5);
+  /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
 //Simple SideBar
@@ -98,14 +112,15 @@ h6 {
 }
 
 .navbar-edit{
-  background-color: #404040;
-  
+  background: rgb(18, 142, 255);
+  background: linear-gradient(35deg, rgba(18, 142, 255, 1) 10%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 91%, rgba(255, 4, 4, 1) 91%);
 }
 
 header {
   padding: 140px 0 109px;
   margin-top: -70px;
-  background: linear-gradient(to top, #ffffff -5%, #404040 89%);
+  background: rgb(18, 142, 255);
+  background: linear-gradient(297deg, rgba(18, 142, 255, 1) 15%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 87%, rgba(255, 4, 4, 1) 87%);
   background-size: cover;
   
   

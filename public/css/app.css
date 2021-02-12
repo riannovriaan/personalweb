@@ -4621,18 +4621,18 @@ readers do not read off random characters that represent icons */
   font-family: "Montserrat", sans-serif;
   font-size: 100px;
   line-height: 95px;
-  color: white;
+  color: #0c4479;
 }
 
 .my-name strong {
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #a10000;
 }
 
 .caption {
   font-family: "Montserrat", sans-serif;
   margin-top: 40px;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #000000;
   font-size: 30px;
   line-height: 20px;
   font-weight: bold;
@@ -4706,14 +4706,25 @@ h6 {
 
 .btn-myresume {
   border-radius: 40px !important;
+  transition: transform 0.2s !important;
 }
 
 .btn-myresume:hover {
-  background-color: purple !important;
+  background-color: #0176d6 !important;
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.5) !important;
 }
 
 .fa-contact-custom {
   color: #ff214f;
+  transition: transform 0.2s;
+}
+
+.fa-contact-custom:hover {
+  /* IE 9 */
+  /* Safari 3-8 */
+  transform: scale(1.5);
 }
 
 #wrapper {
@@ -4766,13 +4777,15 @@ h6 {
 }
 
 .navbar-edit {
-  background-color: #404040;
+  background: #128eff;
+  background: linear-gradient(35deg, #128eff 10%, white 10%, white 91%, #ff0404 91%);
 }
 
 header {
   padding: 140px 0 109px;
   margin-top: -70px;
-  background: linear-gradient(to top, #ffffff -5%, #404040 89%);
+  background: #128eff;
+  background: linear-gradient(297deg, #128eff 15%, white 15%, white 87%, #ff0404 87%);
   background-size: cover;
 }
 
