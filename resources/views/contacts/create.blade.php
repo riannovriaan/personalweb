@@ -52,14 +52,14 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2>Edit Education</h2>
+                    <h2>Create New Contact</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('educations.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('contacts.index') }}"> Back</a>
                 </div>
             </div>
         </div>
-    
+        
         @if ($errors->any())
             <div class="alert alert-danger">
                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -70,35 +70,45 @@
                 </ul>
             </div>
         @endif
-    
-        <form action="{{ route('educations.update',$education->id) }}" method="POST">
+        
+        <form action="{{ route('contacts.store') }}" method="POST">
             @csrf
-            @method('PUT')
-    
+        
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Location:</strong>
-                        <input type="text" name="loc" value="{{ $education->loc }}" class="form-control" placeholder="Location">
+                        <strong>Email Link:</strong>
+                        <input type="text" name="email_link" class="form-control" placeholder="Email Link">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Description:</strong>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $education->description }}</textarea>
+                        <strong>Email:</strong>
+                        <textarea class="form-control" style="height:150px" name="email" placeholder="Email"></textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Since:</strong>
-                        <input type="text" name="since" value="{{ $education->since }}" class="form-control" placeholder="Since">
+                        <strong>Insta Link:</strong>
+                        <input type="text" name="insta_link" class="form-control" placeholder="Insta Link">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Insta:</strong>
+                        <textarea class="form-control" style="height:150px" name="insta" placeholder="Insta"></textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Work Time:</strong>
+                        <textarea class="form-control" style="height:150px" name="work" placeholder="Work Time"></textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </div>
-    
         </form>
     </div>
     </div>

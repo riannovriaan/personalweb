@@ -22,3 +22,4 @@ Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'inde
 Route::resource('experiences', App\Http\Controllers\ExperienceController::class)->middleware('auth');
 Route::resource('educations', App\Http\Controllers\EducationController::class)->middleware('auth');
 Route::resource('abouts', App\Http\Controllers\AboutController::class)->middleware('auth');
+Route::resource('contacts', App\Http\Controllers\ContactController::class)->middleware('auth');

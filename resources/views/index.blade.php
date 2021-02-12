@@ -165,9 +165,12 @@
   
     </section>
     
+    
+
     <section id="contact" class="py-5">
       <div class="container">
         <h3 class="text-center about-me mb-5" data-aos="fade-up" data-aos-duration="1500"> <strong>GET IN TOUCH</strong></h3>
+        @foreach ($contacts as $contact)
         <div class="row">
           {{-- <div class="col-lg-3 text-center">
             <a href="https://www.google.com/maps/place/6%C2%B021'57.6%22S+106%C2%B050'14.8%22E/@-6.365989,106.8352473,17z/data=!3m1!4b1!4m9!1m2!10m1!1e2!3m5!1s0x2e69ec139177af6f:0x0!7e2!8m2!3d-6.365989!4d106.837436?authuser=1&hl=id" 
@@ -177,9 +180,9 @@
           </div> --}}
 
           <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=novrianrian19@gmail.com" target="_blank"> <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
+            <a href="{{ $contact->email_link}}" target="_blank"> <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
             <p><strong>Email Me!</strong></p>
-            <p>Just click the icon or send your message to novrianrian19@gmail.com</p>
+            <p>{{ $contact->email}}</p>
           </div>
 
           {{-- <div class="col-lg-3 text-center">
@@ -189,19 +192,21 @@
           </div> --}}
 
           <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
-            <a href="https://www.instagram.com/riannovriaan/" target="_blank"><i class="fab fa-instagram fa-contact-custom fa-4x mb-2"></i></a>
+            <a href="{{ $contact->insta_link}}" target="_blank"><i class="fab fa-instagram fa-contact-custom fa-4x mb-2"></i></a>
             <p><strong>Followe Me!</strong></p>
-            <p>Just click the icon or Find @riannovriaan</p>
+            <p>{{ $contact->insta}}</p>
           </div>
 
           <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
             <i class="far fa-clock fa-contact-custom fa-4x mb-2"></i>
             <p><strong>Working Hours!</strong></p>
-            <p>Mon to Sat – 9.00 to 18.00</p>
+            <p>{{ $contact->work}}</p>
           </div>
         </div>
       </div>
     </section>
+        
+    @endforeach
 
     <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
       <div class="container text-center">

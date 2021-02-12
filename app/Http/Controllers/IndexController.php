@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Experience;
 use App\Models\Education;
 use App\Models\About;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -20,11 +21,13 @@ class IndexController extends Controller
         $experiences = Experience::all();
         $educations = Education::all();
         $abouts = About::all();
+        $contacts = Contact::all();
 
         return view('index',[
             'experiences' => $experiences,
             'educations' => $educations,
             'abouts' => $abouts,
+            'contacts' => $contacts,
         ]);
 
     }

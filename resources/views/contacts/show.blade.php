@@ -52,10 +52,10 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2> Show Experience</h2>
+                    <h2> Show Contact</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('experiences.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('contacts.index') }}"> Back</a>
                 </div>
             </div>
         </div>
@@ -63,26 +63,32 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Title:</strong>
-                    {{ $experience->title }}
+                    <strong>Email Link:</strong>
+                    {{ $contact->email_link }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    {{ $experience->loc }}
+                    <strong>Email:</strong>
+                    {{ $contact->email }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Description:</strong>
-                    {{ $experience->description }}
+                    <strong>Insta Link:</strong>
+                    {{ $contact->insta_link}}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Since:</strong>
-                    {{ $experience->since }}
+                    <strong>Insta:</strong>
+                    {{ $contact->insta_}}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Work Time:</strong>
+                    {{ $contact->work}}
                 </div>
             </div>
         </div>
