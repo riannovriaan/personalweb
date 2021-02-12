@@ -5,29 +5,29 @@
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Dashboard Admin </div>
-      <div class="list-group list-group-flush">
+    <div class="sidebar-heading">Dashboard Admin </div>
+    <div class="list-group list-group-flush">
         <a href="{{ url('/experiences') }}" class="list-group-item list-group-item-action bg-light active">Experiences</a>
         <a href="{{ url('/educations') }}" class="list-group-item list-group-item-action bg-light">Educations</a>
         <a href="{{ url('/abouts') }}" class="list-group-item list-group-item-action bg-light">About Me</a>
         <a href="{{ url('/contacts') }}" class="list-group-item list-group-item-action bg-light">My Contacts</a>
         <a href="{{ url('/portofolios') }}" class="list-group-item list-group-item-action bg-light">My Portofolios</a>
-      </div>
+    </div>
     </div>
     <!-- /#sidebar-wrapper -->
 
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <button class="btn btn-primary" id="tombol-toggle">Menu</button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                     {{ Auth::user()->name }}
@@ -35,8 +35,8 @@
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('logout') }}"
-                       onclick="event.preventDefault();
-                                     document.getElementById('logout-form').submit();">
+                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
                         {{ __('Logout') }}
                     </a>
 
@@ -45,22 +45,22 @@
                     </form>
                 </div>
             </li>
-          </ul>
+        </ul>
         </div>
-      </nav>
+    </nav>
 
-      <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2>Edit experience</h2>
+                    <h2>Edit Portofolio</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('experiences.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('portofolios.index') }}"> Back</a>
                 </div>
             </div>
         </div>
-     
+    
         @if ($errors->any())
             <div class="alert alert-danger">
                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -71,46 +71,40 @@
                 </ul>
             </div>
         @endif
-     
-        <form action="{{ route('experiences.update',$experience->id) }}" method="POST">
+    
+        <form action="{{ route('portofolios.update',$portofolio->id) }}" method="POST">
             @csrf
             @method('PUT')
-     
-             <div class="row">
+    
+            <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Title:</strong>
-                        <input type="text" name="title" value="{{ $experience->title }}" class="form-control" placeholder="Title">
+                        <strong>Link untuk kolom kiri:</strong>
+                        <input type="text" name="col_left" value="{{ $portofolio->col_left }}" class="form-control" placeholder="Link Untuk Kolom Kiri">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Location:</strong>
-                        <input type="text" name="loc" value="{{ $experience->loc }}" class="form-control" placeholder="Location">
+                        <strong>Link untuk kolom kanan:</strong>
+                        <input class="form-control" type="text" value="{{ $portofolio->col_right }} " name="col_right" placeholder="Link untuk kolom kanan">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Description:</strong>
-                        <textarea class="form-control" style="height:150px" name="description" placeholder="Description">{{ $experience->description }}</textarea>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        <strong>Since:</strong>
-                        <input type="text" name="since" value="{{ $experience->since }}" class="form-control" placeholder="Since">
+                        <strong>Nama Project:</strong>
+                        <textarea class="form-control" style="height:150px" name="projectname" placeholder="Project Name ex: Project 1 (kiri) & Project 2 (kanan)">{{ $portofolio->projectname }}</textarea>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                  <button type="submit" class="btn btn-primary">Update</button>
+                <button type="submit" class="btn btn-primary">Update</button>
                 </div>
             </div>
-     
+    
         </form>
-      </div>
+    </div>
     </div>
     <!-- /#page-content-wrapper -->
 
-  </div>
-  <!-- /#wrapper -->
+</div>
+<!-- /#wrapper -->
 @endsection

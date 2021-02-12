@@ -6,6 +6,7 @@ use App\Models\Experience;
 use App\Models\Education;
 use App\Models\About;
 use App\Models\Contact;
+use App\Models\Portofolio;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -22,12 +23,14 @@ class IndexController extends Controller
         $educations = Education::all();
         $abouts = About::all();
         $contacts = Contact::all();
+        $portofolios = Portofolio::all();
 
         return view('index',[
             'experiences' => $experiences,
             'educations' => $educations,
             'abouts' => $abouts,
             'contacts' => $contacts,
+            'portofolios' => $portofolios,
         ]);
 
     }

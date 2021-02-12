@@ -69,16 +69,19 @@
       </h3>
       <p class="text-center font-weight-light mb-5" data-aos="fade-up" data-aos-duration="1500"><small>SELECTED LATEST WORKS</small></p>
     <div class="container">
-      <div class="row grid-row">
+          <div class="row grid-row">
+          @foreach ($portofolios as $portofolio)
         <div class="column">
-          <img data-aos="fade-right" data-aos-duration="1500" src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=300&fit=crop" alt="">
-          <img data-aos="fade-right" data-aos-duration="1500" src="https://images.unsplash.com/photo-1602576666092-bf6447a729fc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
+          <img data-aos="fade-right" data-aos-duration="1500" src="{{ $portofolio->col_left}}" alt="">
         </div>
+          @endforeach
+          @foreach ($portofolios as $portofolio)
         <div class="column">
-          <img data-aos="fade-left" data-aos-duration="1500" src="https://images.unsplash.com/photo-1585844621420-c0c2f393ab71?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=500&fit=crop" alt="">
-          <img data-aos="fade-left" data-aos-duration="1500" src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=400&fit=crop" alt="">
+          <img data-aos="fade-left" data-aos-duration="1500" src="{{ $portofolio->col_right}}" alt="">
         </div>
+          @endforeach
       </div>
+      
     </div>
     </div>
     </section>

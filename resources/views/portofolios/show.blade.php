@@ -53,10 +53,10 @@
         <div class="row mt-5 mb-5">
             <div class="col-lg-12 margin-tb">
                 <div class="float-left">
-                    <h2> Show Education</h2>
+                    <h2> Show Portofolio</h2>
                 </div>
                 <div class="float-right">
-                    <a class="btn btn-secondary" href="{{ route('educations.index') }}"> Back</a>
+                    <a class="btn btn-secondary" href="{{ route('portofolios.index') }}"> Back</a>
                 </div>
             </div>
         </div>
@@ -64,20 +64,20 @@
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Location:</strong>
-                    {{ $education->loc }}
+                    <strong>Email Link:</strong>
+                    {{ $portofolio->col_left }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Description:</strong>
-                    {{ $education->description }}
+                    <strong>Email:</strong>
+                    {{ $portofolio->col_right }}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Since:</strong>
-                    {{ $education->since }}
+                    <strong>Insta Link:</strong>
+                    {{ $portofolio->projectname}}
                 </div>
             </div>
         </div>
