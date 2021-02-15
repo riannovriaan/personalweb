@@ -74,6 +74,7 @@
                 <th>Quote 2</th>
                 <th>Quote 2a</th>
                 <th>Quote 2b</th>
+                <th>Resume Download</th>
                 <th width="280px"class="text-center">Action</th>
             </tr>
             @foreach ($abouts as $about)
@@ -84,6 +85,7 @@
                 <td>{{ $about->quote2 }}</td>
                 <td>{{ $about->quote2a }}</td>
                 <td>{{ $about->quote2b }}</td>
+                <td>{{ $about->downloadresume }}</td>
                 <td class="text-center">
                     <form action="{{ route('abouts.destroy',$about->id) }}" method="POST">
         

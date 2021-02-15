@@ -151,16 +151,17 @@
               {{ $about->quote2 }}
             </h6> 
             <p data-aos="fade-up" data-aos-duration="1500">
-             {{ $about->quote2a }}
+              {{ $about->quote2a }}
             </p>
             <p data-aos="fade-up" data-aos-duration="1500">
               {{ $about->quote2b }}
             </p>
-            <br><a class="btn btn-outline-dark btn-myresume" data-aos="fade-up" data-aos-duration="1500" href="/img/CV.pdf" 
+            <br><a class="btn btn-outline-dark btn-myresume" data-aos="fade-up" data-aos-duration="1500" href="{{$about->downloadresume}}" 
             target="_blank" role="button">
-          <i class="fas fa-arrow-alt-circle-down" aria-hidden="true"></i>
-          MY RESUME
-          </a>
+            <i class="fas fa-arrow-alt-circle-down" aria-hidden="true"></i>
+            MY RESUME
+            </a>
+            <p data-aos="fade-up" data-aos-duration="1500">*only with permission</p>
           </div>
         </div>
       @endforeach
@@ -182,8 +183,9 @@
               <p>Jl. Kedoya Raya No.53 Rt 04/ Rw 02, Pondok Cina, Beji, Depok</p>
           </div> --}}
 
-          <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ $contact->email_link}}" target="_blank"> <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
+          <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ $contact->email_link}}" target="_blank"> 
+            <i class="far fa-envelope-open fa-contact-custom fa-4x mb-2"></i></a>
             <p><strong>Email Me!</strong></p>
             <p>{{ $contact->email}}</p>
           </div>
@@ -194,13 +196,21 @@
             <p>Just click the icon or Call my phone number 0812 1294 1016</p>
           </div> --}}
 
-          <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
-            <a href="{{ $contact->insta_link}}" target="_blank"><i class="fab fa-instagram fa-contact-custom fa-4x mb-2"></i></a>
+          <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ $contact->insta_link}}" target="_blank">
+            <i class="fab fa-instagram fa-contact-custom fa-4x mb-2"></i></a>
             <p><strong>Followe Me!</strong></p>
             <p>{{ $contact->insta}}</p>
           </div>
 
-          <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
+          <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1500">
+            <a href="{{ $contact->linkedin_link}}" target="_blank">
+            <i class="fab fa-linkedin fa-contact-custom fa-4x mb-2"></i></a>
+            <p><strong>Find Me on LinkedIn!</strong></p>
+            <p>{{ $contact->linkedin}}</p>
+          </div>
+
+          <div class="col-lg-3 text-center" data-aos="fade-up" data-aos-duration="1500">
             <i class="far fa-clock fa-contact-custom fa-4x mb-2"></i>
             <p><strong>Working Hours!</strong></p>
             <p>{{ $contact->work}}</p>

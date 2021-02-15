@@ -10,7 +10,7 @@ class Contact extends Model
     use HasFactory;
 
     protected $fillable = [
-        'email_link', 'email', 'insta_link', 'insta', 'work'
+        'email_link', 'email', 'insta_link', 'insta', 'work', 'linkedin', 'linkedin_link'
     ];
 
     protected $table = 'contacts';

@@ -103,6 +103,18 @@
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
+                        <strong>Linkedin Link:</strong>
+                        <input type="text" name="linkedin_link" value="{{ $contact->linkedin_link }}" class="form-control" placeholder="Linkedin Link">
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Linkedin:</strong>
+                        <textarea class="form-control" style="height:150px" name="linkedin" placeholder="Linkedin">{{ $contact->linkedin }}</textarea>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
                         <strong>Work Time:</strong>
                         <textarea class="form-control" style="height:150px" name="work" placeholder="Work Time">{{ $contact->work }}</textarea>
                     </div>

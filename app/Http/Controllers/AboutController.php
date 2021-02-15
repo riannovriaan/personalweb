@@ -47,6 +47,7 @@ class AboutController extends Controller
             'quote2' => 'required',
             'quote2a' => 'required',
             'quote2b' => 'required',
+            'downloadresume' => 'required',
         ]);
 
         About::create($request->all());
@@ -97,6 +98,7 @@ class AboutController extends Controller
             'quote2' => 'required',
             'quote2a' => 'required',
             'quote2b' => 'required',
+            'downloadresume' => 'required',
         ]);
 
         $about->update($request->all());

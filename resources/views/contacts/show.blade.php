@@ -83,7 +83,19 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Insta:</strong>
-                    {{ $contact->insta_}}
+                    {{ $contact->insta}}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Linkedin Link:</strong>
+                    {{ $contact->linkedin_link}}
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Linkedin:</strong>
+                    {{ $contact->linkedin}}
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

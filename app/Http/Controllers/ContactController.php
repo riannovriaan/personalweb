@@ -46,7 +46,9 @@ class ContactController extends Controller
             'email' => 'required',
             'insta_link' => 'required',
             'insta' => 'required',
-            'work' => 'required'
+            'work' => 'required',
+            'linkedin'=> 'required',
+            'linkedin_link'=> 'required',
         ]);
 
         Contact::create($request->all());
@@ -96,7 +98,9 @@ class ContactController extends Controller
             'email' => 'required',
             'insta_link' => 'required',
             'insta' => 'required',
-            'work' => 'required'
+            'work' => 'required',
+            'linkedin'=> 'required',
+            'linkedin_link'=> 'required',
         ]);
 
         $contact->update($request->all());

@@ -74,6 +74,8 @@
                 <th>Email</th>
                 <th>Insta Link</th>
                 <th>Insta </th>
+                <th>Linkedin Link</th>
+                <th>Linkedin </th>
                 <th>Work Time</th>
                 <th width="280px"class="text-center">Action</th>
             </tr>
@@ -84,6 +86,8 @@
                 <td>{{ $contact->email }}</td>
                 <td>{{ $contact->insta_link }}</td>
                 <td>{{ $contact->insta }}</td>
+                <td>{{ $contact->linkedin_link }}</td>
+                <td>{{ $contact->linkedin }}</td>
                 <td>{{ $contact->work }}</td>
                 <td class="text-center">
                     <form action="{{ route('contacts.destroy',$contact->id) }}" method="POST">

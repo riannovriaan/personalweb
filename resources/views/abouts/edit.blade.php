@@ -106,6 +106,12 @@
                         <textarea class="form-control" style="height:150px" name="quote2b" placeholder="Quote 2b">{{ $about->quote2b }}</textarea>
                     </div>
                 </div>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="form-group">
+                        <strong>Resume Download Link:</strong>
+                        <input type="text" name="downloadresume" value="{{ $about->downloadresume }}" class="form-control" placeholder="Link for Resume Download">
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Update</button>
                 </div>
